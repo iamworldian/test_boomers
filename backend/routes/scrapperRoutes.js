@@ -13,8 +13,7 @@ router.route('/submit-search')
           case 'texas':
             return scrapperController.texasSiteScrap(req, res);
           case 'other':
-            return scrapperController.otherSiteScrap(req, res);
-          // Add more cases for other locations
+          
           default:
             return res.status(400).json({ error: 'Invalid location specified' });
         }

@@ -63,7 +63,7 @@ const uploadImages = (req, res) => {
       }
 
       const image = await Image.create({
-        url: req.file.location, // Use the S3 file URL
+        url: req.file.location, 
         propertyId: req.params.propertyId
       });
 
